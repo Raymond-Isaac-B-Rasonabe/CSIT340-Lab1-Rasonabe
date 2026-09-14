@@ -1,120 +1,79 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+      <header className="max-w-2xl mx-auto px-6 pt-16">
+        <h1 className="text-4xl font-semibold tracking-tight">
+          RAAAYMONNNDDDDD ISAAAAAACCCC B RASSSSSOONABEEE
+        </h1>
+
+        <p className="mt-2 text-lg text-slate-600">
+          Third year BSIT student at Cebu Institute of Technology – University. CIT NOOOOMMBERR ONEEE
+        </p>
+
+        <hr className="mt-8 border-slate-200" />
+      </header>
+
+      <main className="max-w-2xl mx-auto px-6 py-10">
+
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold mb-3">
+            About
+          </h2>
+
+          <p className="leading-relaxed text-slate-700">
+            I grew up in Talisay and moved to Talisay City for college. I picked
+            IT because I T, dejoke, I wanted to build things people actually open, and I have
+            been slowly but surely pero still slowly, but surely fr fr figuring out what part of that I enjoy most. So far it
+            is the part where something finally runs.
           </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+        </section>
 
-      <div className="ticks"></div>
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold mb-3">
+            Details
+          </h2>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
+          <p className="leading-relaxed text-slate-700">
+            Course: BS Information Technology
+            <br />
+            Year level: Third year
+            <br />
+            Hometown: Talisay City, Cebu
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold mb-3">
+            Things I like
+          </h2>
+
+          <ul className="list-disc list-inside space-y-1 text-slate-700">
+            <li>Playing badminton on weekends, badly</li>
+            <li>Fixing other people's laptops for free</li>
+            <li>Tubig 🗿</li>
           </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+        <section>
+          <h2 className="text-xl font-semibold mb-3">
+            Reach me 😘
+          </h2>
+
+          <p className="leading-relaxed text-slate-700">
+            raymondisaac.rasonabe@cit.edu
+            <br />
+            @empilightEnjoyer on most things
+          </p>
+        </section>
+
+      </main>
+
+      <section className="max-w-2xl mx-auto px-6 pb-16">
+        <hr className="mb-6 border-slate-200" />
+        <p className="text-sm text-slate-500">
+          Made for CSIT340 (sir Lance my Idol).
+        </p>
+      </section>
     </>
   )
 }
